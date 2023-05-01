@@ -4,125 +4,98 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Personal Portfolio</title>
+	
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Custom css -->
+    <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
-	<style>
-		body {
-			height: 100%;
-			background-color: darkslategray;
-			margin: 0;
-		}
+	
+    <!-- Header Design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
 
-		.topnav {
-            overflow: hidden;
-            background-color: #333;
-        }
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-        .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        }
+        <nav class="bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#interset">Interset</a>
+        </nav>
+    </header>
 
-        .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-        }
+    <!-- Home Section Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Gokul Radhakrishnan</h1>
+            <h3>And I'm a <span>Penetration Tester</span></h3>
+            <p> My keen interest in the Red Teaming and Offensive Security as well as Cyber Security Researcher.With my extensive experience in cybersecurity and red teaming. I have developed a strong understanding of the latest security threats and vulnerabilities.</p>
+            <div class="social-media">
+                <a href="https://tryhackme.com/p/gokulkrishnxn"><i class='bx bx-user'></i></a>
+                <a href="https://twitter.com/GUnvoiceable"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/gokul-radhakrishnan-047ba0126/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/gokulkrishnxn"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1oML-ytqwl0oLz4dOL-Nyuwta-HX8XASF/view?usp=sharing" class="btn">Download CV</a>
+        </div>
 
-        .topnav a.active {
-        background-color: #04AA6D;
-        color: white;
-        }
+        <div class="home-img">
+            <img src="images/Photo.jpg" alt="">
+        </div>
+    </section>
+	
+    <!--about section Design-->
 
-        .topnav .icon {
-        display: none;
-        }
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/Photo.jpg" alt="">
+        </div>
 
-        @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child) {display: none;}
-        .topnav a.icon {
-            float: right;
-            display: block;
-        }
-        }
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Penetration Tester</h3>
+            <p>Aspire to establish a career as a cyber security expert with a thriving, high-tech company comprised of motivated and dedicated individuals to maximize personal growth and potential while contributing to cybersecurity excellence.My keen interest in the Red Teaming and Offensive Security as well as Cyber Security Researcher.With my extensive experience in cybersecurity and red teaming. I have developed a strong understanding of the latest security threats and vulnerabilities</p>
+            <a href="https://www.linkedin.com/in/gokul-radhakrishnan-047ba0126/" class="btn">Read More</a>
+        </div>
+    </section>
 
-        @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .topnav.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-        }
-		
-		.middle {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-		}
+    <!-- Research Section Desing-->
+    <section class="interset" id="interset">
+        <h2 class="heading">Our<span>interset</span></h2>
 
-		hr {
-			margin: auto;
-			width: 40%;
-		}
+        <div class="interset-container">
+            <div class="interset-box">
+               <i class='bx bx-code-alt'></i>
+               <h3>Expoit Development</h3>
+               <p>My expertise in cybersecurity and red teaming has provided me with a deep understanding of the latest exploit development and zero-day discoveries utilized by ATP to detect system vulnerabilities.</p>
+               <a href="https://github.com/gokulkrishnxn" class="btn">Read More</a>
+            </div>
 
-		p {
-			text-align: center;
-			font-size: 60px;
-			margin-top: 0px;
-			color: rgba(238, 208, 12, 0.81);
-		}
-		
-	</style>
-	<div class="topnav" id="myTopnav">
-        <a href="main.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i></a>
-    </div>
-	<div class="middle">
-		<h1>WILL BE UPDATING SOON</h1>
-		<hr>
-		<p id="mydate"></p>
-	</div>
-	</div>
-<script>
-	 function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
+            <div class="interset-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Reverse Engineering</h3>
+                <p>My expertise in cybersecurity and red teaming, I have developed a profound understanding of reverse engineering.I am highly skilled in analyzing the behavior of malware utilized by ATP groups.<p>
+                <a href="https://github.com/gokulkrishnxn" class="btn">Read More</a>
+             </div>
 
-		var countDownDate = new Date("May 5, 2023 15:00:25").getTime();
-		var x = setInterval(function() {
-			var now = new Date().getTime();
-			var distance = countDownDate - now;
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			document.getElementById("mydate").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-			if (distance <0) {
-				clearInterval(x);
-				document.getElementById("mydate").innerHTML = "EXPIRED";
-			}
-		}, 1000);
-</script>
+             <div class="interset-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Malware Reseacher</h3>
+                <p>With my extensive background in cybersecurity and red teaming, I have developed a profound understanding of the latest malware and threats that are linked with ATP Groups to find the goal of the  malware.</p>
+                <a href="https://github.com/gokulkrishnxn" class="btn">Read More</a>
+             </div>
+
+             <div class="interset-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Red Teaming</h3>
+                <p>My extensive experience in cybersecurity and red teaming, I possess a profound understanding how to emulate like adversary or acting like threat actor to gain access using TTP methodology into a system if the defener can detect the threat actors.</p>
+                <a href="https://github.com/gokulkrishnxn" class="btn">Read More</a>
+             </div>
+        </div>
+    </section>
+
 </body>
 </html>
